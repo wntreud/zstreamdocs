@@ -1,0 +1,121 @@
+---
+title: "Troubleshooting Z-Stream Playback and Access Issues"
+sidebarTitle: "Troubleshooting"
+description: "Step-by-step solutions for common Z-Stream problems — videos not playing, blank screens, errors, and browser compatibility issues."
+---
+
+<Note>
+  Z-Stream is a fully browser-based platform — no app, no account, and no installation required. The vast majority of playback and access issues are resolved simply by refreshing the page or switching to a different browser.
+</Note>
+
+## Common Issues and Fixes
+
+<AccordionGroup>
+  <Accordion title="Video won't play / blank screen">
+    A blank video player or a player that never starts is one of the most common issues and is almost always fixable in a few quick steps.
+
+    <Steps>
+      <Step title="Refresh the page">
+        Press **F5** (Windows/Linux) or **Cmd + R** (Mac) to do a standard page refresh. If that doesn't work, do a hard refresh with **Ctrl + Shift + R** (Windows/Linux) or **Cmd + Shift + R** (Mac) to bypass any cached assets.
+      </Step>
+      <Step title="Make sure JavaScript is enabled">
+        Z-Stream's video player relies entirely on JavaScript. If JavaScript is disabled in your browser, the player will appear blank.
+
+        - **Chrome/Edge**: Go to **Settings → Privacy and security → Site Settings → JavaScript** and ensure it is set to **Allowed**.
+        - **Firefox**: Type `about:config` in the address bar, search for `javascript.enabled`, and confirm it is set to `true`.
+        - **Safari**: Go to **Preferences → Security** and check **Enable JavaScript**.
+
+        If you use a browser extension that blocks scripts (such as NoScript or uBlock Origin), try pausing it for the Z-Stream tab and reloading.
+      </Step>
+      <Step title="Try a different browser">
+        If the page still shows a blank screen, open Z-Stream in a different browser. The recommended options are **Google Chrome**, **Mozilla Firefox**, and **Microsoft Edge**. This quickly tells you whether the issue is browser-specific.
+      </Step>
+    </Steps>
+  </Accordion>
+
+  <Accordion title="'An error occurred' message">
+    Seeing an error message overlaid on the player usually means the video stream failed to load or was interrupted mid-session.
+
+    <Steps>
+      <Step title="Reload the player">
+        Click the reload or retry button inside the player if one is shown. If not, refresh the entire page with **Ctrl + Shift + R** / **Cmd + Shift + R** to force a clean reload.
+      </Step>
+      <Step title="Clear your browser cache">
+        A corrupt or outdated cache can prevent the player from loading correctly.
+
+        - **Chrome/Edge**: **Settings → Privacy and security → Clear browsing data** → select **Cached images and files** → **Clear data**.
+        - **Firefox**: **Settings → Privacy & Security → Cookies and Site Data → Clear Data** → select **Cached Web Content** → **Clear**.
+        - **Safari**: **Develop → Empty Caches** (enable the Develop menu in **Preferences → Advanced** first).
+
+        After clearing the cache, navigate back to Z-Stream and try playing the video again.
+      </Step>
+      <Step title="Try incognito / private mode">
+        Open a new incognito or private browsing window (**Ctrl + Shift + N** in Chrome/Edge, **Ctrl + Shift + P** in Firefox) and go to [zstream.mov](https://zstream.mov). Private mode disables most extensions and uses a fresh session, which helps isolate whether the error is caused by an extension or a stored setting.
+      </Step>
+    </Steps>
+  </Accordion>
+
+  <Accordion title="Page won't load / site appears to be down">
+    If Z-Stream's pages fail to load entirely, the issue could be on your end or, less commonly, a brief period of site maintenance.
+
+    <Steps>
+      <Step title="Check your internet connection">
+        Make sure your device has an active internet connection. Try opening a different website (for example, a search engine) to confirm your connection is working. If other sites are also unreachable, restart your router or contact your internet provider.
+      </Step>
+      <Step title="Try a different browser or device">
+        If your connection is fine but Z-Stream still won't load, try opening [zstream.mov](https://zstream.mov) in a different browser or on a different device (such as your phone). This rules out a browser-level block or misconfiguration.
+      </Step>
+      <Step title="Check the Discord for status updates">
+        If the site appears to be down across multiple browsers and devices, it may be a brief period of maintenance. Join the [Z-Stream Discord](https://discord.gg/wmbWfk4SGy) to check for any announcements from the team or to ask other community members whether they are experiencing the same issue.
+      </Step>
+    </Steps>
+  </Accordion>
+
+  <Accordion title="Player loads but no video source is available">
+    Sometimes the video player appears correctly but reports that no source is found, or the video simply never starts despite the player loading.
+
+    <Steps>
+      <Step title="Try an alternate source">
+        Some titles on Z-Stream have multiple source options. Look for a **Sources** or **Server** selector in the player interface and switch to a different one. Different sources are hosted on different servers, so one may be available even when another is not.
+      </Step>
+      <Step title="Check back later">
+        If only one source is listed and it is unavailable, the title may be temporarily offline for re-indexing or due to a broken link in the catalog. This is usually resolved within a few hours. Come back and try again later.
+      </Step>
+      <Step title="Ask in Discord">
+        If a source has been missing for more than a day, report it in the [Z-Stream Discord](https://discord.gg/wmbWfk4SGy) so the community or team can look into it.
+      </Step>
+    </Steps>
+  </Accordion>
+
+  <Accordion title="Browser compatibility">
+    Z-Stream is built on modern web standards. While it works on most up-to-date browsers, very old browser versions may not support the video formats or JavaScript features the platform requires.
+
+    **Recommended browsers:**
+
+    | Browser | Minimum recommended version |
+    |---|---|
+    | Google Chrome | 90+ |
+    | Mozilla Firefox | 88+ |
+    | Microsoft Edge | 90+ |
+    | Safari (macOS/iOS) | 14+ |
+    | Brave | Latest stable release |
+
+    **Tips for older browsers:**
+    - If you are using an older version of a browser, updating it to the latest release will resolve most compatibility issues.
+    - Internet Explorer is **not supported**. Switch to Microsoft Edge or another modern browser.
+    - On mobile, use the latest version of Chrome for Android or Safari for iOS for the best experience.
+
+    <Warning>
+      Very old browsers (for example, Chrome below version 70 or Firefox below version 60) may show a blank player or encounter JavaScript errors. Updating your browser is the fastest fix.
+    </Warning>
+  </Accordion>
+</AccordionGroup>
+
+## Still Having Trouble?
+
+If none of the steps above resolve your issue, the Z-Stream community is the best place to get further help. Join the [Discord server](https://discord.gg/wmbWfk4SGy), describe what you are seeing (including your browser and OS), and someone will assist you.
+
+You can also explore these related guides:
+
+- [Buffering & Quality Issues](/help/buffering-and-quality)
+- [Missing or Unavailable Content](/help/missing-content)

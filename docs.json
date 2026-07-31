@@ -1,72 +1,69 @@
 {
   "$schema": "https://mintlify.com/docs.json",
-  "theme": "mint",
-  "name": "Mintlify Starter Kit",
-  "colors": {
-    "primary": "#16A34A",
-    "light": "#07C983",
-    "dark": "#15803D"
+  "name": "Z-Stream",
+  "theme": "almond",
+  "logo": {
+    "light": "https://media.brand.dev/0220da6f-e6ed-4c33-b41d-ee7443c6b557.svg",
+    "dark": "https://media.brand.dev/0220da6f-e6ed-4c33-b41d-ee7443c6b557.svg"
   },
-  "favicon": "/favicon.svg",
+  "favicon": "https://media.brand.dev/df5d270e-765b-402f-86e9-e6bb2b3e1507.png",
+  "colors": {
+    "primary": "#7b7cea",
+    "light": "#4c4c84",
+    "dark": "#0a0912"
+  },
+  "fonts": {
+    "heading": {
+      "family": "Lato"
+    },
+    "body": {
+      "family": "Lato"
+    }
+  },
+  "navbar": {
+    "primary": {
+      "type": "button",
+      "label": "Watch Now",
+      "href": "https://zstream.mov"
+    }
+  },
   "navigation": {
-    "pages": [
+    "groups": [
       {
         "group": "Getting Started",
         "pages": [
-          "index",
-          "quickstart"
+          "introduction",
+          "how-to-watch",
+          "supported-devices"
+        ]
+      },
+      {
+        "group": "Features",
+        "pages": [
+          "features/browsing-and-discovery",
+          "features/movies",
+          "features/tv-shows",
+          "features/live-tv"
+        ]
+      },
+      {
+        "group": "FAQ",
+        "pages": [
+          "faq/general",
+          "faq/playback",
+          "faq/content",
+          "faq/privacy"
+        ]
+      },
+      {
+        "group": "Help",
+        "pages": [
+          "help/troubleshooting",
+          "help/buffering-and-quality",
+          "help/missing-content",
+          "help/contact"
         ]
       }
-    ],
-    "global": {
-      "anchors": [
-        {
-          "anchor": "Documentation",
-          "href": "https://mintlify.com/docs",
-          "icon": "book-open-cover"
-        },
-        {
-          "anchor": "Blog",
-          "href": "https://mintlify.com/blog",
-          "icon": "newspaper"
-        }
-      ]
-    }
-  },
-  "logo": {
-    "light": "/logo/light.svg",
-    "dark": "/logo/dark.svg"
-  },
-  "navbar": {
-    "links": [
-      {
-        "label": "Support",
-        "href": "mailto:hi@mintlify.com"
-      }
-    ],
-    "primary": {
-      "type": "button",
-      "label": "Dashboard",
-      "href": "https://app.mintlify.com"
-    }
-  },
-  "contextual": {
-    "options": [
-      "copy",
-      "view",
-      "chatgpt",
-      "claude",
-      "perplexity",
-      "mcp",
-      "cursor",
-      "vscode"
     ]
-  },
-  "footer": {
-    "socials": {
-      "x": "https://x.com/mintlify",
-      "github": "https://github.com/mintlify",
-      "linkedin": "https://linkedin.com/company/mintlify"
-    }
   }
 }

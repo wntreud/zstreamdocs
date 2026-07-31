@@ -1,0 +1,65 @@
+{
+  "projectType": "saas",
+  "projectName": "Z-Stream",
+  "projectDescription": "Z-Stream is a free, no-signup, no-ads movie and TV show streaming platform — the successor to P-Stream, now at zstream.mov.",
+  "theme": "almond",
+  "primaryColor": "#7b7cea",
+  "lightColor": "#4c4c84",
+  "darkColor": "#0a0912",
+  "navigation": {
+    "groups": [
+      {
+        "group": "Getting Started",
+        "pages": [
+          "introduction",
+          "how-to-watch",
+          "supported-devices"
+        ]
+      },
+      {
+        "group": "Features",
+        "pages": [
+          "features/browsing-and-discovery",
+          "features/movies",
+          "features/tv-shows",
+          "features/live-tv"
+        ]
+      },
+      {
+        "group": "FAQ",
+        "pages": [
+          "faq/general",
+          "faq/playback",
+          "faq/content",
+          "faq/privacy"
+        ]
+      },
+      {
+        "group": "Help",
+        "pages": [
+          "help/troubleshooting",
+          "help/buffering-and-quality",
+          "help/missing-content",
+          "help/contact"
+        ]
+      }
+    ]
+  },
+  "keyFeatures": [
+    "Free streaming with no account required",
+    "No advertisements",
+    "Movies and TV shows on demand",
+    "Curated editor picks and genre browsing",
+    "Discover section with popular, top-rated, and now-playing titles",
+    "Live TV & sports via affiliated zlive.st",
+    "Discord community"
+  ],
+  "publicApiSurface": [
+    "Browse movies by genre",
+    "Browse TV shows by genre",
+    "Discover popular, top-rated, and now-playing movies",
+    "Editor picks for movies and TV shows",
+    "Media detail pages (zstream.mov/media/[id])",
+    "Live TV redirect (zlive.st)"
+  ]
+}

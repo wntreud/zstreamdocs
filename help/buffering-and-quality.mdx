@@ -1,0 +1,86 @@
+---
+title: "Fix Buffering and Video Quality Issues on Z-Stream"
+sidebarTitle: "Buffering & Quality"
+description: "Improve your Z-Stream streaming experience by fixing buffering, reducing lag, and adjusting video quality for your internet speed."
+---
+
+<Note>
+  Buffering during peak hours — particularly weekday evenings and weekends — is normal and is usually caused by increased demand on streaming servers rather than anything wrong with your setup. If buffering only happens at those times, the tips below will still help reduce it.
+</Note>
+
+## Why Buffering Happens
+
+Buffering occurs when your device cannot receive video data fast enough to play it smoothly. The three most common causes are:
+
+- **Insufficient internet speed** — your connection doesn't have enough bandwidth for the selected quality level.
+- **High server load** — streaming servers experience more traffic at peak times, which can slow delivery.
+- **Device performance** — older or low-powered devices may struggle to decode high-resolution video in real time, especially in the browser.
+
+Understanding the cause helps you pick the right fix.
+
+## Recommended Internet Speeds
+
+Use these benchmarks to check whether your connection is fast enough for the quality you want:
+
+| Quality | Recommended Speed |
+|---|---|
+| SD (480p) | 3 Mbps or higher |
+| HD (720p) | 5 Mbps or higher |
+| Full HD (1080p) | 10 Mbps or higher |
+| 4K (if available) | 25 Mbps or higher |
+
+You can test your current speed at a speed-test site. If your speed is below the threshold for your chosen quality, lowering the quality setting is the single most effective fix.
+
+## Quick Fixes for Buffering
+
+<Steps>
+  <Step title="Lower the video quality">
+    Open the quality selector in the player (usually a gear icon or a label like **1080p** in the player controls) and choose a lower resolution — for example, drop from 1080p to 720p or 480p. This immediately reduces the amount of data your connection needs to deliver per second and is the fastest way to stop buffering.
+  </Step>
+  <Step title="Pause and let the video buffer">
+    Pause playback for 30–60 seconds. This lets the player download a larger buffer ahead of the current playback position. Once you see the progress bar fill further ahead, press play again for a smoother experience.
+  </Step>
+  <Step title="Close other tabs and applications">
+    Other browser tabs streaming video, downloading files, or running heavy web apps all compete for bandwidth and CPU resources. Close anything you don't need while watching Z-Stream.
+  </Step>
+  <Step title="Switch to a wired Ethernet connection">
+    <Tip>
+      A wired Ethernet connection delivers more consistent speeds and lower latency than Wi-Fi, which is especially noticeable for high-bitrate video. If your device has an Ethernet port (or you can use a USB adapter), connecting directly to your router is one of the most effective long-term fixes for buffering.
+    </Tip>
+
+    If a wired connection isn't practical, move closer to your Wi-Fi router or use a 5 GHz band instead of 2.4 GHz for faster wireless speeds.
+  </Step>
+  <Step title="Reload the page">
+    Occasionally a stream can get stuck in a degraded state. A hard refresh (**Ctrl + Shift + R** / **Cmd + Shift + R**) resets the player and re-establishes the connection to the source server, which can resolve persistent buffering.
+  </Step>
+  <Step title="Try a different source">
+    If the player shows a source selector, switch to an alternate source. Different sources are served from different servers, and one may perform significantly better on your connection than another.
+  </Step>
+</Steps>
+
+## How to Change Video Quality in the Player
+
+Most Z-Stream titles support manual quality selection directly inside the video player:
+
+1. Start playing the video.
+2. Look for a **gear icon** (⚙) or a quality label such as **Auto**, **1080p**, or **720p** in the bottom-right area of the player controls.
+3. Click it to open the quality menu.
+4. Select your preferred resolution from the list.
+
+If you don't see a quality selector, the stream may only be available in a single resolution, or quality may be controlled automatically based on your connection speed (adaptive streaming). In that case, the tips above — particularly lowering bandwidth use and using a wired connection — still apply.
+
+## Device Performance Tips
+
+Slow devices can cause stuttering and dropped frames even when your internet speed is adequate. Here's how to get the best performance:
+
+- **Close background apps** — streaming video is CPU and memory intensive. Quit apps you're not using, especially other browsers or media players.
+- **Restart your browser** — a browser that has been open for a long time can accumulate memory overhead. Closing and reopening it can improve playback smoothness.
+- **Use a modern browser** — Chrome, Firefox, and Edge have highly optimized video decoders. Older browsers may use software decoding, which is much harder on your CPU.
+- **Keep your browser up to date** — browser updates frequently include improvements to hardware video acceleration, which reduces the CPU load of playing high-resolution video.
+- **Enable hardware acceleration** — check that hardware acceleration is turned on in your browser settings (it is usually enabled by default):
+  - **Chrome/Edge**: **Settings → System → Use hardware acceleration when available**
+  - **Firefox**: **Settings → General → Performance → Use hardware acceleration when available**
+
+## Still Buffering?
+
+If you've tried all of the above and buffering continues, the issue may be with a specific source server experiencing high load. Try a different source in the player, or check the [Z-Stream Discord](https://discord.gg/wmbWfk4SGy) to see if other users are reporting the same problem.
