@@ -25,7 +25,8 @@
       "type": "button",
       "label": "Watch Now",
       "href": "https://zstream.mov"
-    }
+    },
+    "links": []
   },
   "navigation": {
     "pages": [
