@@ -42,7 +42,6 @@
       {
         "group": "Features",
         "pages": [
-          "features/browsing-and-discovery",
           "features/movies",
           "features/tv-shows",
           "Apps/live-tv"
