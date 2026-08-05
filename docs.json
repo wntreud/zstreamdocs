@@ -42,7 +42,6 @@
       {
         "group": "Features",
         "pages": [
-          "features/movies",
           "features/tv-shows",
           "features/live-tv"
         ]
