@@ -42,7 +42,7 @@
       {
         "group": "Features",
         "pages": [
-          "features/tv-shows",
+          "apps/browsing-and-discovery",
           "apps/live-tv"
         ]
       },
@@ -67,7 +67,6 @@
       {
         "group": "apps",
         "pages": [
-          "apps/browsing-and-discovery",
           "apps/live-tv"
         ]
       }
