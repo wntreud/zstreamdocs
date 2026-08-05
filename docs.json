@@ -47,23 +47,6 @@
           "apps/ios"
         ]
       },
-      {
-        "group": "faq",
-        "pages": [
-          "faq/content",
-          "faq/general",
-          "faq/playback",
-          "faq/privacy"
-        ]
-      },
-      {
-        "group": "Help",
-        "pages": [
-          "help/buffering-and-quality",
-          "help/missing-content",
-          "help/troubleshooting"
-        ]
-      },
       "help/contact-2"
     ]
   }
