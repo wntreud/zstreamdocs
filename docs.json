@@ -28,22 +28,22 @@
     }
   },
   "navigation": {
-    "groups": [
+    "pages": [
+      "index",
       {
         "group": "Getting Started",
         "pages": [
           "introduction",
-          "how-to-watch",
           "supported-devices",
           "apps",
           "ads"
         ]
       },
       {
-        "group": "Features",
+        "group": "apps",
         "pages": [
           "apps/browsing-and-discovery",
-          "apps/live-tv"
+          "apps/browsing-and-discovery-2"
         ]
       },
       {
@@ -62,12 +62,6 @@
           "help/buffering-and-quality",
           "help/missing-content",
           "help/contact"
-        ]
-      },
-      {
-        "group": "apps",
-        "pages": [
-          "apps/live-tv"
         ]
       }
     ]
