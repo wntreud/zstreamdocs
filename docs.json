@@ -37,7 +37,9 @@
           "supported-devices",
           "apps",
           "ads"
-        ]
+        ],
+        "icon": "bell-exclamation",
+        "expanded": true
       },
       {
         "group": "App Guides",
@@ -45,7 +47,9 @@
           "apps/windows",
           "apps/android",
           "apps/ios"
-        ]
+        ],
+        "icon": "apple-alt",
+        "expanded": true
       },
       {
         "group": "FAQ",
@@ -54,7 +58,8 @@
           "faq/content",
           "faq/playback",
           "faq/privacy"
-        ]
+        ],
+        "icon": "question-circle"
       },
       {
         "group": "Help",
@@ -62,7 +67,8 @@
           "help/buffering-and-quality",
           "help/missing-content",
           "help/troubleshooting"
-        ]
+        ],
+        "icon": "hands-helping"
       },
       "help/contact"
     ]
