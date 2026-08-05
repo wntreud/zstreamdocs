@@ -23,21 +23,13 @@ Z-Stream is available as a Windows application. Download the latest version from
 ---
 
 <Warning>
-  #### False Trojan Detection Notice
+  ### False Trojan Detection Notice
 
-  <br />Some users may see a false malware detection warning when installing or updating Z-Stream on Windows.
+  Some users may see a false malware warning when installing or updating the Z-Stream Windows App. This is caused by the PowerShell-based updater being incorrectly flagged by some antivirus software.
 
-  This is caused by the PowerShell-based automatic updater being incorrectly detected by some security software. The issue has been submitted to Microsoft for review.
+  Microsoft has reviewed the file and confirmed it shows **“No malware detected”**, and updated [Windows Defender definitions](https://www.microsoft.com/en-us/security/portal/definitions/adl.aspx) no longer flag the issue.
 
-  Microsoft has re-reviewed the file and confirmed that it shows as **"No malware detected"** on their end. The latest Microsoft Defender definitions for Windows 11 no longer flag this issue.
-
-  To update your Microsoft Defender definitions, visit:
-
-  [https://www.microsoft.com/en-us/security/portal/definitions/adl.aspx](https://www.microsoft.com/en-us/security/portal/definitions/adl.aspx)
-
-  Other major antivirus providers have also confirmed that the Z-Stream Windows App is safe. You can verify the file through VirusTotal if needed.
-
-  If your antivirus still shows a warning, make sure your security definitions are updated before trying the installation again.<br />
+  If you still receive a warning, you can temporarily disable your antivirus, install Z-Stream, and add the app folder as an exclusion in Windows Defender. Make sure your security definitions are updated before reinstalling.
 </Warning>
 
 ---
