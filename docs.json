@@ -43,7 +43,7 @@
         "group": "Features",
         "pages": [
           "features/tv-shows",
-          "features/live-tv"
+          "apps/live-tv"
         ]
       },
       {
