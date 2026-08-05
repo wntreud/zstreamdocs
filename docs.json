@@ -51,10 +51,9 @@
         "group": "help",
         "pages": [
           "help/buffering-and-quality",
-          "help/contact",
-          "help/contact-2",
           "help/missing-content",
-          "help/troubleshooting"
+          "help/troubleshooting",
+          "help/contact"
         ]
       },
       "help/contact-2"
