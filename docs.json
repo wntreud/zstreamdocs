@@ -50,8 +50,8 @@
       {
         "group": "FAQ",
         "pages": [
-          "faq/content",
           "faq/general",
+          "faq/content",
           "faq/playback",
           "faq/privacy"
         ]
@@ -64,7 +64,7 @@
           "help/troubleshooting"
         ]
       },
-      "help/contact-2-2"
+      "help/contact"
     ]
   }
 }
