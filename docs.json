@@ -48,6 +48,15 @@
         ]
       },
       {
+        "group": "faq",
+        "pages": [
+          "faq/content",
+          "faq/general",
+          "faq/playback",
+          "faq/privacy"
+        ]
+      },
+      {
         "group": "Help",
         "pages": [
           "help/buffering-and-quality",
