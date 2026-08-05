@@ -76,8 +76,12 @@
   "background": {
     "decoration": "gradient",
     "color": {
-      "light": "#ababab",
+      "light": "#ffffff",
       "dark": "#000000"
     }
+  },
+  "appearance": {
+    "default": "dark",
+    "strict": false
   }
 }
