@@ -45,7 +45,7 @@
           "features/browsing-and-discovery",
           "features/movies",
           "features/tv-shows",
-          "features/live-tv"
+          "Apps/live-tv"
         ]
       },
       {
