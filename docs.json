@@ -83,5 +83,10 @@
   "appearance": {
     "default": "dark",
     "strict": false
+  },
+  "footer": {
+    "socials": {
+      "website": "https://zstream.mov/"
+    }
   }
 }
