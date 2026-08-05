@@ -1,66 +1,90 @@
 ---
-title: "Watch Free Live TV and Sports Streams on zlive.st"
-sidebarTitle: "Live TV"
-description: "Z-Stream partners with zlive.st for free live TV and sports streaming — catch World Cup matches, UFC fights, and more live channels at no cost."
-hidden: true
+title: "Android/Android Tv Installation Guide "
+sidebarTitle: "Android/Android TV"
 ---
 
-Z-Stream's on-demand library covers movies and TV shows, but if you want to watch something live — a big match, a pay-per-view fight, or a live news channel — Z-Stream points you to its affiliated service: [**zlive.st**](https://zlive.st).
+# Installing ZStream on Android
 
-## What is zlive.st?
+<Accordion title="Method 1: App APK">
+  1. Download the latest **ZStream APK** from the [Downloads page](https://zstream.mov/apps).
+  2. If prompted, allow your browser or file manager to install unknown apps.
+  3. Open the downloaded APK and tap **Install**.
+  4. Once installed, open ZStream and enjoy.
+</Accordion>
 
-[zlive.st](https://zlive.st) is a free live TV and sports streaming platform affiliated with Z-Stream. It operates as a separate site focused entirely on live content, complementing Z-Stream's on-demand catalog. Like Z-Stream, it requires no signup and no subscription — just click and watch.
+## **Updating**
 
-## What's Available on zlive.st
-
-zlive.st carries a broad range of live channels and events, including:
-
-- **World Cup** — live football coverage during major international tournaments
-- **UFC** — live fight nights and pay-per-view events
-- **Sports channels** — a wide selection of live sports from around the world
-- **Live TV channels** — news, entertainment, and general broadcast channels streaming in real time
-
-Coverage and available channels update around live events, so check the site directly to see what's currently streaming.
-
-## How to Access zlive.st
-
-You can reach zlive.st in two ways:
-
-1. **Direct link** — go straight to [https://zlive.st](https://zlive.st) in your browser at any time.
-2. **From Z-Stream** — look for the **zlive.st banner** on the Z-Stream homepage and click it. The link opens zlive.st in a separate tab so you don't lose your place on Z-Stream.
-
-<Note>
-  zlive.st is an affiliated service — it is a separate website from Z-Stream and opens in a new tab. Live content is only available on zlive.st and is not part of Z-Stream's on-demand library.
-</Note>
-
-## Live TV vs. On-Demand
-
-It's worth understanding the distinction between the two services:
-
-|  | Z-Stream | zlive.st |
-| --- | --- | --- |
-| **Content type** | On-demand movies and TV shows | Live TV channels and sports events |
-| **URL** | [zstream.mov](https://zstream.mov) | [zlive.st](https://zlive.st) |
-| **Account required** | No | No |
-| **Cost** | Free | Free |
-
-Use Z-Stream when you want to pick something to watch on your own schedule. Switch to zlive.st when there's a live event you don't want to miss.
-
-<Tip>
-  Bookmark [https://zlive.st](https://zlive.st) separately in your browser for quick access during live events. When a match or fight is about to start, you'll be able to get there in one click without having to navigate through Z-Stream first.
-</Tip>
+Z-Stream automatically checks for updates and installs the latest version when available.<br /><br />Android installs are provided as an APK. You may need to enable **Install from Unknown Sources** in your device settings before installing. Always download the APK from the official [**zstream.mov/apps**](https://zstream.mov/apps) page.
 
 ---
 
-## Join the Community
+# Installing ZStream on Android TV
 
-Have questions about live streams or want to find out what events are coming up? Join the Z-Stream community on Discord at [discord.gg/streaming](https://discord.gg/streaming) — community members often share upcoming event schedules and streaming tips.
+<Accordion title="Method 1: Install with the Z-Stream Android App (Recommended)">
+  - Install the ZStream Android app on your phone.
+  - Make sure your phone and Android TV are connected to the same Wi-Fi network.
+  - Open the ADB Installer in the ZStream app.
+  - Select your Android TV and install the latest ZStream TV APK.
+</Accordion>
 
-## What's Next?
+<Accordion title="Method 2: Install with an ADB Installer">
+  If you don't have the Z-Stream Android app, you can use an ADB installer such as ADB TV.
 
-- [Streaming Movies on Z-Stream](/features/movies)
-- [Watching TV Shows on Z-Stream](/features/tv-shows)
-- [Browsing and Discovering Content](/features/browsing-and-discovery)
+  Download ADB TV:<br />[https://play.google.com/store/apps/details?id=com.cybercat.adbappcontrol.tv](https://play.google.com/store/apps/details?id=com.cybercat.adbappcontrol.tv)
+
+  Connect to your Android TV, select the latest ZStream TV APK, and install it.
+</Accordion>
+
+<Accordion title="Method 3: Install Using a PC (ADB)">
+  ou can install Z-Stream on Android TV using ADB from a computer.
+
+  ## Requirements
+
+  - A Windows, macOS, or Linux computer
+  - Android TV connected to the same network
+  - ADB installed on your computer
+
+  Download ADB: [https://developer.android.com/tools/releases/platform-tools](https://developer.android.com/tools/releases/platform-tools)
+
+  ## Installation Steps
+
+  1. Enable **Developer Options** on your Android TV.
+  2. Enable **Wireless Debugging** or **ADB Debugging**.
+
+  ### If Using Wireless Debugging
+
+  You need to pair your TV with your computer first.
+
+  1. Open **Wireless Debugging** on your Android TV.
+  2. Select **Pair device with pairing code**.
+  3. On your computer, run:
+
+  ```bash
+  adb pair TV_IP_ADDRESS:PAIRING_PORT
+  ```
+
+  4. Enter the pairing code shown on your TV.
+
+  ### Connect to Your TV
+
+  If you are using **ADB Debugging**, you can skip the pairing step and connect directly.
+
+  Run:
+
+  ```bash
+  adb connect TV_IP_ADDRESS:PORT
+  ```
+
+  ## Install ZStream
+
+  After connecting, install the ZStream TV APK:
+
+  ```bash
+  adb install ZStream-TV.apk
+  ```
+
+  Once installed, open Z-Stream from your Android TV apps.
+</Accordion>
 
 ---
 
