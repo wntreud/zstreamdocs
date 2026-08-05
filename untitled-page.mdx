@@ -1,0 +1,94 @@
+---
+title: "Android/Android TV Installation guide"
+---
+
+# Installing ZStream on Android
+
+<Accordion title="Method 1: App APK">
+  1. Download the latest **ZStream APK** from the [Downloads page](https://zstream.mov/apps).
+  2. If prompted, allow your browser or file manager to install unknown apps.
+  3. Open the downloaded APK and tap **Install**.
+  4. Once installed, open ZStream and enjoy.
+</Accordion>
+
+# Installing ZStream on Android TV
+
+<Accordion title="Method 1: Install with ZStream Android App (Recommended)">
+  - Install the ZStream Android app on your phone.
+  - Make sure your phone and Android TV are connected to the same Wi-Fi network.
+  - Open the **ADB Installer** inside the ZStream app.
+  - Select your Android TV.
+  - Install the latest Z-Stream TV APK.
+</Accordion>
+
+<Accordion title="Method 2: Install with an ADB Installer">
+  **Installing ZStream with an ADB Installer**
+
+  If you don't have the ZStream Android app, you can use an ADB installer such as **ADB TV**.
+
+  Download ADB TV:<br /><br /> [https://play.google.com/store/apps/details?id=com.cybercat.adbappcontrol.tv](https://play.google.com/store/apps/details?id=com.cybercat.adbappcontrol.tv)
+
+  1. Connect your device to your Android TV.
+  2. Select the latest ZStream TV APK.
+  3. Install Z-Stream.
+</Accordion>
+
+<Accordion title="Method 3: Install Using a PC (ADB)">
+  You can install ZStream using ADB from a Windows, macOS, or Linux computer.
+
+  Download ADB:<br />[https://developer.android.com/tools/releases/platform-tools](https://developer.android.com/tools/releases/platform-tools)
+
+  **Requirements:**
+
+  - Computer with ADB installed
+  - Android TV connected to the same network
+
+  **Setup:**
+
+  1. Enable **Developer Options** on your Android TV.
+  2. Enable **Wireless Debugging** or **ADB Debugging**.
+
+  **If Using Wireless Debugging:**
+
+  You need to pair your TV with your computer first.
+
+  1. Open **Wireless Debugging** on your Android TV.
+  2. Select **Pair device with pairing code**.
+  3. Run:
+
+  ```text
+  adb pair TV_IP_ADDRESS:PAIRING_PORT
+  ```
+
+  4. Enter the pairing code shown on your TV.
+
+  **Connect to Your TV:**
+
+  If you are using **ADB Debugging**, you can skip the pairing step and connect directly.
+
+  Run:
+
+  ```text
+  adb connect TV_IP_ADDRESS:PORT
+  ```
+
+  **Install ZStream:**
+
+  After connecting, install the ZStream TV APK:
+
+  ```text
+  adb install ZStream-TV.apk
+  ```
+
+  Once installed, open ZStream from your Android TV apps.
+</Accordion>
+
+# Updating
+
+ZStream automatically checks for updates and installs the latest version when available. 
+
+---
+
+<Note>
+  **Disclaimer:** Z-Stream does not host or store any media files on its servers. All content is provided by third-party sources, and we simply index and link to publicly available media hosted elsewhere.
+</Note>
